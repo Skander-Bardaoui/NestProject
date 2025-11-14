@@ -10,6 +10,9 @@ export class User {
 
   @Prop()
   email: string;
+
+  @Prop()
+  status: string;   // <-- ADD THIS LINE
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
