@@ -1,4 +1,4 @@
-import { IsEmail, IsOptional, IsString } from 'class-validator';
+import { IsEmail, IsOptional, IsString, IsIn } from 'class-validator';
 
 export class UpdateUserDto {
   @IsOptional()
@@ -10,6 +10,6 @@ export class UpdateUserDto {
   email?: string;
 
   @IsOptional()
-  @IsString()
-  status?: string;   
+  @IsIn(['admin', 'client'])
+  role?: string;
 }
