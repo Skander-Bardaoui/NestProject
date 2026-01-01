@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Temps Réel</title>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script defer src="chat.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    #messages div {
+      margin: 5px 0;
+      padding: 8px;
+      background: #eee;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>💬 Chat NestJS</h2>
+
+  <div id="messages"></div>
+
+  <input id="content" placeholder="Votre message" />
+  <button id="send">Envoyer</button>
+
+</body>
+</html>
